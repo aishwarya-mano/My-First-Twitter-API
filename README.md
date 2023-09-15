@@ -16,3 +16,10 @@ List of APIs
 ```
 /api/delete/<tweet_id>
 ```
+## To Run 
+
+Run the cmd from Terminal
+```
+flask --app app run
+```
+

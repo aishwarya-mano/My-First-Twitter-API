@@ -35,9 +35,12 @@ def create_tweet():
                        message="Success",
                        statusCode=200,
                        data=response)
-    except:
+    except Exception as msg:
+        val = 'Failed';
+        if len(msg.api_messages) > 0:
+            val = msg.api_messages[0];
         return jsonify(isError=True,
-                       message="Failed",
+                       message=val,
                        statusCode=500,
                        data={})
 

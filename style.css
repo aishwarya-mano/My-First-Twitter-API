@@ -30,7 +30,7 @@ padding-bottom: 20px;
 padding-top: 20px;
 }
 input[type=submit] {
-	justify-content: center;
+justify-content: center;
 	display: flex;
 	background-color: black;
 	height: 50px;
